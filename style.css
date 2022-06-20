@@ -121,10 +121,16 @@ div.input-box{
 div.input-box input{
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
-    border: none;
     border-radius: 10px;
-    box-shadow: 1px 1px 6px #0000001c;
+    box-shadow: 1px 1px 6px #00000021;
+}
 
+.hiden{
+    border: none;
+}
+
+.show{
+    border: 1px solid #ff00006c;
 }
 
 div.input-box input:hover{
@@ -169,7 +175,7 @@ div.gender-input label{
     color:#000000c0;
 }
 
-div.continue-button button{
+div.continue-button input{
     width: 100%;
     margin-top: 2.5rem;
     border: none;
@@ -177,17 +183,14 @@ div.continue-button button{
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
+
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
 }
 
 div.continue-button button:hover{
     background-color: #5ED7F2;
-}
-
-div.continue-button button a {
-    text-decoration: none;
-    font-size: 0.93rem;
-    font-weight: 500;
-    color: #fff;
 }
 
 div.conteiner{
