@@ -26,32 +26,48 @@
                 <div class="input-group">
                    <div class="input-box">
                        <label for="firstname">Primero nome</label> 
-                       <input id="firstname" type="text" class="text hiden" name="firstname" placeholder="Nome" required>
+                       <input id="firstname" type="text" class="text" name="firstname" placeholder="Nome" required>
                    </div> 
 
                    <div class="input-box">
                     <label for="lastname">Sobrenome</label> 
-                    <input id="lastname" type="text" class="text hiden" name="lastname" placeholder="Sobrenome" required>
+                    <input id="lastname" type="text" class="text " name="lastname" placeholder="Sobrenome" required>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <small>mensagem de erro</small>
                   </div> 
 
                   <div class="input-box">
                     <label for="email">Email</label> 
-                    <input id="email" type="email" class="text hiden" name="email" placeholder="Digite seu email" required>
+                    <input id="email" type="email" class="text" name="email" placeholder="Digite seu email" required>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <small>mensagem de erro</small>
                   </div> 
                   
                   <div class="input-box">
                     <label for="number">celular</label> 
-                    <input id="number" type="tel"  name="number" placeholder="(xx) xxxx-xxxx" class="hiden" required>
+                    <input id="number" type="tel"  name="number" placeholder="(xx) xxxx-xxxx" required>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <small>mensagem de erro</small>
                   </div> 
 
                   <div class="input-box">
                     <label for="password">senha</label> 
-                    <input id="password" type="password"  name="password" placeholder="Digite uma senha" class="hiden" required>
+                    <input id="password" type="password"  name="password" placeholder="Digite uma senha" required>
+                    <i class="fa-solid fa-circle-exclamation" id="ico"></i>
+                    <i class="fa-solid fa-circle-check" id="ico"></i>
+                    <small>mensagem de erro</small>
                   </div>
 
                   <div class="input-box">
+
                     <label for="password-confirmation">Confirme sua Senha</label> 
-                    <input id="password-confirmation" type="password" name="password-confirmation" placeholder="Confirme sua Senha" class="hiden" required>
+                    <input id="password-confirmation" type="password" name="password-confirmation" placeholder="Confirme sua Senha" required>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <small>mensagem de erro</small>
                   </div> 
 
                 </div>
@@ -92,5 +108,6 @@
     </div>
 
     <script src="javascript/app.js"></script>
+    <script src="https://kit.fontawesome.com/1f97bfba8e.js" crossorigin="anonymous"></script>
 </body>
 </html>

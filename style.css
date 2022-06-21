@@ -116,21 +116,30 @@ div.input-box{
     flex-direction: column;
 
     margin-bottom: 1rem;
+
+    position: relative;
+}
+
+div.input-box i{
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    visibility: hidden;
+}
+
+div.input-box small{
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    visibility: hidden;
 }
 
 div.input-box input{
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
     border-radius: 10px;
-    box-shadow: 1px 1px 6px #00000021;
-}
-
-.hiden{
-    border: none;
-}
-
-.show{
-    border: 1px solid #ff00006c;
+    box-shadow: 1px 1px 6px #ad515121;
 }
 
 div.input-box input:hover{
@@ -315,4 +324,34 @@ div.gender-group{
         flex-direction: column;
 
     }
+}
+
+ /* ERRO AND SUCCESS */
+
+.input-box.success{
+    border-color: #2ecc71;
+}
+
+.input-box.erro {
+    border-color: #e74c3c;
+}
+
+.input-box.success i.fa-circle-check{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.input-box.erro i.fa-circle-exclamation{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.input-box.success small{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.input-box.erro small{
+    color: #e74c3c;
+    visibility: visible;
 }
