@@ -328,11 +328,11 @@ div.gender-group{
 
  /* ERRO AND SUCCESS */
 
-.input-box.success{
+.input-box.success input{
     border-color: #2ecc71;
 }
 
-.input-box.erro {
+.input-box.erro input{
     border-color: #e74c3c;
 }
 
@@ -343,11 +343,6 @@ div.gender-group{
 
 .input-box.erro i.fa-circle-exclamation{
     color: #e74c3c;
-    visibility: visible;
-}
-
-.input-box.success small{
-    color: #2ecc71;
     visibility: visible;
 }
 
