@@ -132,14 +132,14 @@ div.input-box small{
     position: absolute;
     bottom: 0px;
     left: 0px;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 div.input-box input{
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
     border-radius: 10px;
-    box-shadow: 1px 1px 6px #ad515121;
+    box-shadow: 1px 1px 6px #03030321;
 }
 
 div.input-box input:hover{
@@ -327,26 +327,26 @@ div.gender-group{
 }
 
  /* ERRO AND SUCCESS */
-
-.input-box.success input{
-    border-color: #2ecc71;
+.removi{
+    border-color: rgba(255, 255, 255, 0);
 }
 
-.input-box.erro input{
-    border-color: #e74c3c;
+.success{
+    border: 1px solid #2ecc71;
 }
 
-.input-box.success i.fa-circle-check{
+.erro{
+    border: 1px solid #e74c3c;
+}
+.success-icon{
     color: #2ecc71;
-    visibility: visible;
 }
 
-.input-box.erro i.fa-circle-exclamation{
+.erro-icon {
     color: #e74c3c;
-    visibility: visible;
 }
 
-.input-box.erro small{
+.erro-small{
     color: #e74c3c;
     visibility: visible;
 }
