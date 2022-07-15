@@ -116,23 +116,6 @@ div.input-box{
     flex-direction: column;
 
     margin-bottom: 1rem;
-
-    position: relative;
-}
-
-div.input-box i{
-    position: absolute;
-    top: 35px;
-    right: 10px;
-    visibility: hidden;
-}
-
-div.input-box small{
-
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    /* visibility: hidden; */
 }
 
 div.input-box input{
@@ -150,6 +133,10 @@ div.input-box input:focus-visible{
     outline: 1px solid #05AFF2;
 }
 
+small{
+    visibility: hidden;
+}
+
 div.input-box label, .gender-title h6{
     font-size: 0.75rem;
     font-weight: 600;
@@ -160,6 +147,10 @@ div.input-box label, .gender-title h6{
 div.input-box::placeholder{
     color:#000000b2;
 }
+
+/* .show{
+    visibility: hidden;
+} */
 
 div.gender-group{
     display: flex;
@@ -207,52 +198,8 @@ div.conteiner{
     animation-duration: 1s;
 }
 
-
-div.title{
-    animation: move;
-    animation-duration: 1s;
-}
-
-div.login-button{
-    animation: move;
-    animation-duration: 1s;
-}
-
-div.input-box{ 
-    animation: move;
-    animation-duration: 1s;
-}
-
-div.input-box:nth-child(2){
-    
-    animation: move1;
-    animation-duration: 1s;
-}
-
-div.input-box:nth-child(4){
-    
-    animation: move1;
-    animation-duration: 1s;
-}
-
-div.input-box:nth-child(6){
-    
-    animation: move1;
-    animation-duration: 1s;
-}
-
 .form{
     overflow: hidden;
-}
-
-div.gender-title{
-    animation: fede;
-    animation-duration: 1s;
-}
-
-div.gender-group{
-    animation: fade;
-    animation-duration: 1s;
 }
 
 @keyframes fade {
@@ -338,15 +285,8 @@ div.gender-group{
 .erro{
     border: 1px solid #e74c3c;
 }
-.success-icon{
-    color: #2ecc71;
-}
 
-.erro-icon {
-    color: #e74c3c;
-}
-
-.erro-small{
+.appear{
     color: #e74c3c;
     visibility: visible;
 }

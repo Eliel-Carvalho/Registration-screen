@@ -5,66 +5,88 @@ let email = document.getElementById('email')
 let number = document.getElementById('number')
 let password = document.getElementById('password')
 let passwordConfirmation = document.getElementById('password-confirmation')
-let radSex = document.getElementsByName('gender')
+let small = document.querySelector('small')
 
 submit.addEventListener('click', function(){
     setErroFor()
 })
 
 function setErroFor(){
+
     if(firstname.value.length === 0){
+        let input1 = document.getElementById('input1')
         firstname.classList.add('erro')
-        alert('Preencha os Campos')
+        input1.lastElementChild.classList.add('appear')
+
     }else{
         firstname.classList.add('success')
     } 
     
     if(lastname.value.length === 0){
-        lastname.classList.add('erro')  
+
+        let input2 = document.getElementById('input2')
+        lastname.classList.add('erro') 
+        input2.lastElementChild.classList.add('appear') 
+
     }else{
         lastname.classList.add('success')
     }
 
     if(email.value.length === 0){
+
+        let input3 = document.getElementById('input3')
         email.classList.add('erro')
+        input3.lastElementChild.classList.add('appear')
+
     }else if(!validateEmail (email.value)){
-        alert('Insira um Email Validor')
+
+        email.classList.add('erro')
+        
+        input3.lastElementChild.innerText = 'Email Invalido'  
+
     }else{
         email.classList.add('success')
     }
 
     if(number.value.length === 0){
+
+        let input4 = document.getElementById('input4')
         number.classList.add('erro')
-    }else if(!validPhone (number.value)){
-        number.classList.add('erro')
-        alert('Numero de teleforne Invalido!')
+        input4.lastElementChild.classList.add('appear')
+
     }else{
         number.classList.add('success')
     }
 
     if(password.value.length === 0){
+
+        let input5 = document.getElementById('input5')
         password.classList.add('erro') 
+        input5.lastElementChild.classList.add('appear')
+
     }else if(password.value.length < 4){
-        alert('Sua senha não pode ter menos que 4 caracteres')
+
         password.classList.add('erro') 
+        input5.lastElementChild.innerText = 'numero de caracteres insuficiente' 
     }else{
         password.classList.add('success') 
     }
 
     if(passwordConfirmation.value.length === 0){
+
+        let input6 = document.getElementById('input6')
         passwordConfirmation.classList.add('erro') 
+        input6.lastElementChild.classList.add('appear')
+
     }else if(passwordConfirmation !== password){
-        passwordConfirmation.classList.add('erro') 
-        alert('ERRO DE COMFIRMAÇÃO') 
+
+        passwordConfirmation.classList.add('erro')
+        input6.lastElementChild.innerText = 'Confirmação incorreta'  
+
     }else{
         passwordConfirmation.classList.add('success') 
     }
     
-}
-
-function validPhone (phone) {
-    var regex = new RegExp('^\\([0-9]{2}\\)((3[0-9]{3}-[0-9]{4})|(9[0-9]{3}-[0-9]{5}))$');
-    return regex.test(phone);
 }
 
 function validateEmail(email) {
