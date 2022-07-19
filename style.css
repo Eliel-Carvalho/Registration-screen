@@ -111,25 +111,25 @@ div.input-group {
     padding: 1rem 0 ;
 }
 
-div.input-box{
+div.inputBox{
     display: flex;
     flex-direction: column;
 
     margin-bottom: 1rem;
 }
 
-div.input-box input{
+div.inputBox input{
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #03030321;
 }
 
-div.input-box input:hover{
+div.inputBox input:hover{
     background-color: #eeeeee75;
 }
 
-div.input-box input:focus-visible{
+div.inputBox input:focus-visible{
     outline: 1px solid #05AFF2;
 }
 
@@ -137,14 +137,14 @@ small{
     visibility: hidden;
 }
 
-div.input-box label, .gender-title h6{
+div.inputBox label, .gender-title h6{
     font-size: 0.75rem;
     font-weight: 600;
     color: #000000c0;
 
 }
 
-div.input-box::placeholder{
+div.inputBox::placeholder{
     color:#000000b2;
 }
 
